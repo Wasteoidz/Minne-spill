@@ -1,0 +1,30 @@
+.game {
+    background-color: blue;
+    height:900px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board {
+    background-color: aquamarine;
+    height: 800px;
+    width: 1150px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(7,1fr);
+    justify-content: center;
+}
+
+.card {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+}
+
+.knapper {
+    margin-top: 25px;
+
+}
