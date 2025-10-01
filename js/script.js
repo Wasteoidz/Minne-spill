@@ -12,7 +12,7 @@ function showView() {
     <div class="game"> 
         <div class="board" id="board">
             <h1 class="tempText" id="tempText">⁉️Kan du finne alle like⁉️</h1>
-            <div id="knapper" class="knapper">
+            <div id="knapper" class="knapperStart">
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                 <button class="knapp" onclick="getCards(2, decks.spill2)">test</button>
                 <button class="knapp" onclick="getCards(40)">Spill 2</button>
@@ -75,14 +75,16 @@ function checkWin() {
     const allFlipped = Array.from(allCards).every(card => card.classList.contains("flipped"));
 
     if (allFlipped) {
-        document.getElementById('board').innerHTML = `<h1 class=vinnerText>💜Du Har vunnet!💜</h1> </br>
-                                                      <h1>Vil du prøve et annet spill?</h1>
-                                                       <div class="knapper">
+        setTimeout (() => {
+        document.getElementById('board').innerHTML = `<h1 class="vinnerText">💜Du Har vunnet!💜</h1> </br>
+                                                      <h3 class="spillIgjen">Vil du prøve et annet spill?</h3>
+                                                       <div class="knapperVinn">
                                                         <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                                                         <button class="knapp" onclick="getCards(2, decks.spill2)">Spill 2</button>
                                                         <button class="knapp" onclick="getCards(40)">Spill 2</button>
                                                        </div>
                                                      `;
+        }, 800);
     }
 }
 // Fisher–Yates shuffle

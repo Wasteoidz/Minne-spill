@@ -2,13 +2,13 @@ html, body {
     margin: 0%;
     height: 100%;
     width: 100%;
-    background-color: blue;
     overflow: hidden;
 }
 
 .game {
     height:800px;
     width: 1200px;
+    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +48,32 @@ html, body {
     
 }
 
-
-
-.knapper {
-    margin-top: 25px;
-
+.spillIgjen {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    font-size: 3rem;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text; /* For Webkit browsers */
+    background-clip: text;
+    color: transparent;
 }
+
+.knapperStart {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 9;
+}
+
+.knapperVinn {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+
 
 .knapp {
     border-radius: 10px;
