@@ -12,16 +12,17 @@ function showView() {
     <div class="game"> 
         <div class="board" id="board">
             <h1 class="tempText" id="tempText">⁉️Kan du finne alle like⁉️</h1>
+            </div> 
             <div id="knapper" class="knapperStart">
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
-                <button class="knapp" onclick="getCards(40, decks.spill2)">Spill 2</button>
-                <button class="knapp" onclick="getCards(2, decks.test)">test</button>
+                <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
+                <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
             </div>      
-        </div> 
-    </div>
+            </div>
     `;
-}
+}     
 
+//<button class="knapp" onclick="getCards(2, decks.test)">test</button>
 
 //Controller
 function getCards(times, cardSet) {
@@ -36,8 +37,7 @@ function getCards(times, cardSet) {
                     <div class="card-front">❓</div> 
                     <div class="card-back">
                         <img src="${card.img}" 
-                        alt="${card.id}" 
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                        alt="${card.id}">
                     </div>
             </div>`;
     }
@@ -80,8 +80,8 @@ function checkWin() {
                                                       <h3 class="spillIgjen">Vil du prøve et annet spill?</h3>
                                                        <div class="knapperVinn">
                                                         <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
-                                                        <button class="knapp" onclick="getCards(40, decks.spill2)">Spill 2</button>
-                                                        <button class="knapp" onclick="getCards(2, decks.test)">Test</button>
+                                                        <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
+                                                        <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
                                                        </div>
                                                      `;
         }, 800);
