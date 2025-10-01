@@ -12,12 +12,12 @@ function showView() {
     <div class="game"> 
         <div class="board" id="board">
             <h1 class="tempText" id="tempText">⁉️Kan du finne alle like⁉️</h1>
-            </div> 
             <div id="knapper" class="knapperStart">
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                 <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
                 <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
             </div>      
+            </div> 
             </div>
     `;
 }     
