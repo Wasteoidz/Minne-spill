@@ -12,12 +12,12 @@ function showView() {
     <div class="game"> 
         <div class="board" id="board">
             <h1 class="tempText" id="tempText">⁉️Kan du finne alle like⁉️</h1>
+            <div id="knapper" class="knapper">
+                <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
+                <button class="knapp" onclick="getCards(2, decks.spill2)">test</button>
+                <button class="knapp" onclick="getCards(40)">Spill 2</button>
+            </div>      
         </div> 
-        <div class="knapper">
-            <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
-            <button class="knapp" onclick="getCards(2, decks.spill2)">Spill 2</button>
-            <button class="knapp" onclick="getCards(40)">Spill 2</button>
-        </div>      
     </div>
     `;
 }
@@ -27,6 +27,7 @@ function showView() {
 function getCards(times, cardSet) {
     showView();
     document.getElementById('tempText').style.display = "none";
+    document.getElementById('knapper').style.display = "none";
     const shuffled = shuffle([...cardSet]);
     for (let i = 0; i<times; i++) {
         const card = shuffled[i];
@@ -74,7 +75,14 @@ function checkWin() {
     const allFlipped = Array.from(allCards).every(card => card.classList.contains("flipped"));
 
     if (allFlipped) {
-        document.getElementById('board').innerHTML = `<h1 class=vinnerText>💜Du Har vunnet!💜</h1>`;
+        document.getElementById('board').innerHTML = `<h1 class=vinnerText>💜Du Har vunnet!💜</h1> </br>
+                                                      <h1>Vil du prøve et annet spill?</h1>
+                                                       <div class="knapper">
+                                                        <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
+                                                        <button class="knapp" onclick="getCards(2, decks.spill2)">Spill 2</button>
+                                                        <button class="knapp" onclick="getCards(40)">Spill 2</button>
+                                                       </div>
+                                                     `;
     }
 }
 // Fisher–Yates shuffle
