@@ -1,12 +1,12 @@
 html, body {
     margin: 0%;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
     overflow: hidden;
 }
 
 .game {
-    background-color: blue;
     height:800px;
     width: 1200px;
     display: flex;
