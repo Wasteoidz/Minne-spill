@@ -1,14 +1,14 @@
 html, body {
     margin: 0%;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
     overflow: hidden;
 }
 
 .game {
-    height:800px;
-    width: 1200px;
-    background-color: blue;
+    height: 710px;
+    width: 1210px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +18,7 @@ html, body {
 .board {
     background-color: aquamarine;
     height: 720px;
-    width: 1150px;
+    width: 1200px;
     border-radius: 1%;
     display: grid;
     grid-template-columns: repeat(5,1fr);
