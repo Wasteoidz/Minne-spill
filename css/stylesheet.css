@@ -4,6 +4,9 @@ html, body {
     width: 100vw;
     background-color: blue;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .game {
@@ -21,8 +24,8 @@ html, body {
     width: 1200px;
     border-radius: 1%;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
     grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5,1fr);
     place-items: center;
 }
 
