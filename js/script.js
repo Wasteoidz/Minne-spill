@@ -16,11 +16,11 @@ function showView() {
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                 <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
                 <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
-                </div>      
-                </div> 
-                </div>
-                `;
-            }     
+            </div>      
+        </div> 
+    </div>
+  `;
+}     
             
             // <button class="knapp" onclick="getCards(2, decks.test)">test</button>
 
