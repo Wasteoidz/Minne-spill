@@ -16,20 +16,20 @@ function showView() {
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                 <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
                 <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
-            </div>      
-            </div> 
-            </div>
-    `;
-}     
-
-//<button class="knapp" onclick="getCards(2, decks.test)">test</button>
+                </div>      
+                </div> 
+                </div>
+                `;
+            }     
+            
+            // <button class="knapp" onclick="getCards(2, decks.test)">test</button>
 
 //Controller
-function getCards(times, cardSet) {
+function getCards(times, deck) {
     showView();
     document.getElementById('tempText').style.display = "none";
     document.getElementById('knapper').style.display = "none";
-    const shuffled = shuffle([...cardSet]);
+    const shuffled = shuffle([...deck]);
     for (let i = 0; i<times; i++) {
         const card = shuffled[i];
         document.getElementById('board').innerHTML += /*html*/ `
@@ -84,7 +84,7 @@ function checkWin() {
                                                         <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
                                                        </div>
                                                      `;
-        }, 2000);
+        }, 1700);
     }
 }
 // Fisher–Yates shuffle
