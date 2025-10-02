@@ -84,7 +84,7 @@ function checkWin() {
                                                         <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
                                                        </div>
                                                      `;
-        }, 800);
+        }, 2000);
     }
 }
 // Fisher–Yates shuffle
