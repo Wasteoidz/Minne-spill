@@ -16,6 +16,7 @@ function showView() {
                 <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                 <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
                 <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
+                <button class="knapp" onclick="getCards(40, decks.spill4)">👁️Minions🦄</button>
             </div>      
         </div> 
     </div>
@@ -82,6 +83,7 @@ function checkWin() {
                                                         <button class="knapp" onclick="getCards(40, decks.spill1)">🌈Gabby😻</button>
                                                         <button class="knapp" onclick="getCards(40, decks.spill2)">🩵Bluey🐶</button>
                                                         <button class="knapp" onclick="getCards(40, decks.spill3)">🚘Biler🏁</button>
+                                                        <button class="knapp" onclick="getCards(40, decks.spill4)">👁️Minions🦄</button>
                                                        </div>
                                                      `;
         }, 1700);

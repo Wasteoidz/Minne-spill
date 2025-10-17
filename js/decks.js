@@ -65,6 +65,28 @@ const decks = {
         {id: "19", img: "bilder/biler/19.png"},{id: "19", img:"bilder/biler/19.png"},
         {id: "20", img: "bilder/biler/20.png"},{id: "20", img:"bilder/biler/20.png"}
     ],   
+    spill4: [
+        {id: "1", img: "bilder/minions/1.png"},{id: "1", img:"bilder/minions/1.png"},
+        {id: "2", img: "bilder/minions/2.png"},{id: "2", img:"bilder/minions/2.png"},
+        {id: "3", img: "bilder/minions/3.png"},{id: "3", img:"bilder/minions/3.png"},
+        {id: "4", img: "bilder/minions/4.png"},{id: "4", img:"bilder/minions/4.png"},
+        {id: "5", img: "bilder/minions/5.png"},{id: "5", img:"bilder/minions/5.png"},
+        {id: "6", img: "bilder/minions/6.png"},{id: "6", img:"bilder/minions/6.png"},
+        {id: "7", img: "bilder/minions/7.png"},{id: "7", img:"bilder/minions/7.png"},
+        {id: "8", img: "bilder/minions/8.png"},{id: "8", img:"bilder/minions/8.png"},
+        {id: "9", img: "bilder/minions/9.png"},{id: "9", img:"bilder/minions/9.png"},
+        {id: "10", img: "bilder/minions/10.png"},{id: "10", img:"bilder/minions/10.png"},
+        {id: "11", img: "bilder/minions/11.png"},{id: "11", img:"bilder/minions/11.png"},
+        {id: "12", img: "bilder/minions/12.png"},{id: "12", img:"bilder/minions/12.png"},
+        {id: "13", img: "bilder/minions/13.png"},{id: "13", img:"bilder/minions/13.png"},
+        {id: "14", img: "bilder/minions/14.png"},{id: "14", img:"bilder/minions/14.png"},
+        {id: "15", img: "bilder/minions/15.png"},{id: "15", img:"bilder/minions/15.png"},
+        {id: "16", img: "bilder/minions/16.png"},{id: "16", img:"bilder/minions/16.png"},
+        {id: "17", img: "bilder/minions/17.png"},{id: "17", img:"bilder/minions/17.png"},
+        {id: "18", img: "bilder/minions/18.png"},{id: "18", img:"bilder/minions/18.png"},
+        {id: "19", img: "bilder/minions/19.png"},{id: "19", img:"bilder/minions/19.png"},
+        {id: "20", img: "bilder/minions/20.png"},{id: "20", img:"bilder/minions/20.png"}
+    ],   
     test: [  
         {id: "13", img: "bilder/biler/13.png"},{id: "13", img:"bilder/biler/13.png"},       
 
