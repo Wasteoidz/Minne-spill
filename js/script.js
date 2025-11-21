@@ -40,6 +40,7 @@ function getCards(times, deck) {
                         <img src="${card.img}" 
                         alt="${card.id}">
                     </div>
+                    <button>Tilbake</Button>
             </div>`;
     }
 }
